@@ -1,16 +1,75 @@
-# React + Vite
+# Pomodoro Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Pomodoro Timer built with React to help users stay focused and manage work sessions using timed intervals.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Start, pause, and reset the timer
+* Automatic switching between work and break sessions
+* Configurable timer durations
+* Tracks completed work sessions
+* Audio alert when a session ends
+* Responsive design for mobile and desktop
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS
+* localStorage
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/rubbishspitfire/pomodoro-timer-app
+cd pomodoro-timer-app
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+## Live Demo
+
+https://rubbishspitfire.github.io/pomodoro-timer-app/
+
+## Project Structure
+
+```
+src/
+  components/
+  App.jsx
+  main.jsx
+  index.css
+```
+
+## How It Works
+
+The timer alternates between:
+
+* Work sessions (default: 25 minutes)
+* Short breaks (default: 5 minutes)
+* Long breaks after several sessions
+
+The app automatically switches between sessions and keeps track of progress.
+
+## Author
+
+Patience Condell
+https://github.com/rubbishspitfire
